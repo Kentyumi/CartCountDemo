@@ -1,0 +1,7 @@
+cucumberOptions/PageGeneratorManager.class
+stepDefinitions/SignUpDefinitions.class
+page/LoginPage.class
+page/AccountPage.class
+page/SignUpPage.class
+page/HomePage.class
+cucumberOptions/TestRunner.class
