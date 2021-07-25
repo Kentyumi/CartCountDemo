@@ -3,5 +3,6 @@
 /Users/mba0093/Automation/eclipse-workspace/CartCount/src/test/java/page/HomePage.java
 /Users/mba0093/Automation/eclipse-workspace/CartCount/src/test/java/page/LoginPage.java
 /Users/mba0093/Automation/eclipse-workspace/CartCount/src/test/java/cucumberOptions/PageGeneratorManager.java
+/Users/mba0093/Automation/eclipse-workspace/CartCount/src/test/java/stepDefinitions/HomePageDefinitions.java
 /Users/mba0093/Automation/eclipse-workspace/CartCount/src/test/java/page/AccountPage.java
 /Users/mba0093/Automation/eclipse-workspace/CartCount/src/test/java/stepDefinitions/SignUpDefinitions.java

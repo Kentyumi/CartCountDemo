@@ -13,7 +13,6 @@ import org.junit.runner.RunWith;
         monochrome = true,
         plugin = {"pretty", "html:target/site/cucumber-report-default",
                 "json:target/site/cucumber.json"},
-        tags = {"@function"},
         snippets = SnippetType.CAMELCASE)
 
 public class TestRunner {

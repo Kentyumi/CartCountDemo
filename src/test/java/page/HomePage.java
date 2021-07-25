@@ -2,8 +2,6 @@ package page;
 
 import commons.AbstractPage;
 import commons.GlobalConstants;
-import commons.Hooks;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -14,17 +12,11 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//span[text()='Signup as Buyer']")
     private WebElement registerButton;
 
-    public WebDriver driver;
-
-    public HomePage(){
-        this.driver = Hooks.openAndQuitBrowser();
-    }
-
     @Override
     public HomePage open() {
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
-        driver.get(GlobalConstants.homePageUrl);
+        getDriver().manage().timeouts().implicitlyWait(GlobalConstants.TIME_OUT_NORMAL_ELEMENT, TimeUnit.SECONDS);
+        getDriver().manage().window().maximize();
+        getDriver().get(GlobalConstants.homePageUrl);
         return this;
     }
 

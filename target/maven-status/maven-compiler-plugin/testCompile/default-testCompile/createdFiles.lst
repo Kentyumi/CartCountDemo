@@ -4,4 +4,5 @@ page/LoginPage.class
 page/AccountPage.class
 page/SignUpPage.class
 page/HomePage.class
+stepDefinitions/HomePageDefinitions.class
 cucumberOptions/TestRunner.class

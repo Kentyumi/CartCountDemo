@@ -44,8 +44,13 @@ public class SignUpPage extends AbstractPage {
         return this;
     }
 
+    public SignUpPage waitForPageDisplayed(){
+        waitForElementDisplayed(confirmButton);
+        return this;
+    }
+
     @Override
     public boolean isPageDisplayed() {
-        return true;
+        return isForElementPresent(confirmButton);
     }
 }

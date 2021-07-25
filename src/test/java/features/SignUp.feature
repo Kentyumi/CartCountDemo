@@ -3,10 +3,12 @@ Feature: Register a buyer
   I want to register a buyer
   So that verify login function work well
 
-  @function
+  Background:
+    Given : CartCount HomePage is opened
+
   Scenario: Register successfully as a Buyer
-    Given I open CartCount website
     When I tap on [SIGNUP AS BUYER] button
+    Then [SignUp Page] screen is opened
     And I input valid email
     And I input valid FullName
     And I input valid PassWord

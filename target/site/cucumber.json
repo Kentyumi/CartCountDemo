@@ -1,10 +1,109 @@
 [
   {
-    "line": 1,
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": ": CartCount HomePage is opened",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Register successfully as a Buyer",
+        "description": "",
+        "id": "register-a-buyer;register-successfully-as-a-buyer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I tap on [SIGNUP AS BUYER] button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "[SignUp Page] screen is opened",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I input valid email",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I input valid FullName",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I input valid PassWord",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "I tap on [Confirm] button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "Buyer \u0027s homepage is opened successfully",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
     "name": "Register a buyer",
     "description": "As a user\nI want to register a buyer\nSo that verify login function work well",
     "id": "register-a-buyer",
     "keyword": "Feature",
-    "uri": "SignUp.feature"
+    "uri": "SignUp.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@function"
+      }
+    ]
   }
 ]

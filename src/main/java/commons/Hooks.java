@@ -1,6 +1,6 @@
 package commons;
 
-import cucumber.api.java.Before;
+import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -73,6 +73,8 @@ public class Hooks {
                 Runtime.getRuntime().addShutdownHook(new Thread(new BrowserCleanup()));
             }
 
+            driver.manage().window().maximize();
+            driver.manage().deleteAllCookies();
             driver.get(GlobalConstants.homePageUrl);
             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
             log.info("------------- Started the browser -------------");

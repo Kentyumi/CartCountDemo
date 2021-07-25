@@ -1,5 +1,7 @@
 package cucumberOptions;
 
+import commons.Hooks;
+import org.openqa.selenium.WebDriver;
 import page.AccountPage;
 import page.HomePage;
 import page.LoginPage;

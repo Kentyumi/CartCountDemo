@@ -10,9 +10,13 @@ import java.util.Random;
 import java.util.Set;
 
 public abstract class AbstractPage {
-    public  WebDriver driver ;
+    WebDriver driver = Hooks.openAndQuitBrowser();
 
     public abstract AbstractPage open();
+
+    public  WebDriver getDriver(){
+        return driver;
+    }
 
     public abstract boolean isPageDisplayed();
 
